@@ -47,7 +47,8 @@ function calcDisplayBalance() {
 
   totalCost = basePrice + costOfMemory + costOfStorage + costOfDelivery;
 
-  totalPriceEl.innerText = totalCost;
+  totalPriceEl.innerText = totalDiscountEl.innerText = totalCost;
+
 }
 
 function displayPrice(id, price) {
