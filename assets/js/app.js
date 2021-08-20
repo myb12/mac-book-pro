@@ -76,10 +76,6 @@ btn8memory.addEventListener("click", function () {
   displayPrice("extra-memory-cost");
 });
 
-btn8memory.addEventListener("click", function () {
-  displayPrice("extra-memory-cost");
-});
-
 //-------Storage section----------//
 btn256storage.addEventListener("click", function () {
   displayPrice("extra-storage-cost");
