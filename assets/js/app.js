@@ -25,6 +25,7 @@ const totalDiscountEl = document.getElementById("total-after-discount");
 //-------Promo section----------//
 const btnPromo = document.getElementById("promo-btn");
 const promoInput = document.getElementById("promo-input");
+const promoError = document.getElementById("promo-error");
 
 //=======Items' prices========//
 const basePrice = 1299;
@@ -63,7 +64,11 @@ function calcDisplayPriceAfterDiscount() {
 
   if (promoInput.value === "stevekaku") {
     totalDiscountEl.innerText = priceAfterDiscount;
+    promoError.style.opacity = 0;
+  } else {
+    promoError.style.opacity = 1;
   }
+  promoInput.value = '';
 }
 
 //===========Handler==========//
